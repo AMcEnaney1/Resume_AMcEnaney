@@ -1,4 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Originally started off as a template. 
+% However has since been modified a considerable amount.
 % Deedy CV/Resume
 % XeLaTeX Template
 % License:
@@ -9,19 +11,9 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[letterpaper]{deedy-resume} % Use US Letter paper, change to a4paper for A4 
-
-\hypersetup{
-    colorlinks=true,
-    linkcolor=blue,
-    filecolor=magenta,      
-    urlcolor=cyan,
-    pdftitle={Aidan's Resume},
-    pdfpagemode=FullScreen,
-}
+\documentclass[letterpaper]{resume_AMcEnaney} % Use US Letter paper, change to a4paper for A4 
 
 \begin{document}
-
 
 %----------------------------------------------------------------------------------------
 %	TITLE SECTION
@@ -47,7 +39,7 @@
 \section{Education} 
 
     \subsection{University of Maine}
-        \descript{MA in Mathematics}
+        \descript{MA in Mathematics | GPA: 3.9}
         \location{Expected May 2025 \\ Orono, ME }
 
     \sectionspace
@@ -58,7 +50,7 @@
         \descript{Minor in Computer Science}
         \location{May 2023 \\ Orono, ME }
 
-        \sectionspace % Some whitespace after the section
+    \sectionspace % Some whitespace after the section
 
 %------------------------------------------------
 % Skills
@@ -73,16 +65,19 @@
         \location{Familiar:}
         \textbullet{} C \textbullet{} MATLAB \textbullet{} C++ \textbullet{} SQL \\ 
         \textbullet{} HTML/CSS/JavaScript \textbullet{} TCl \\
-        \textbullet{} Lisp \textbullet{Haskell} \textbullet{BASIC}
+        \textbullet{} Lisp \textbullet{} Haskell \textbullet{} BASIC
+        
         \sectionspace
 
     \subsection{APIs}
 
         \textbullet{} SentinelHub \textbullet{} Sentinelsat \textbullet{} AWS
+        
         \sectionspace
 
     \subsection{Operating Systems}
         \textbullet{} Windows \textbullet{} Linux \textbullet{} OSX
+        
         \sectionspace
 
     \subsection{Other}
@@ -105,8 +100,9 @@
         \textbullet{} Object Oriented Programming \\
         \textbullet{} Functional Programming \\
         \textbullet{} Data Structures \& Algorithms \\
+        \textbullet{} Computer Architecture \\
+        \textbullet{} Artificial Intelligence \\
         
-
         \sectionspace % Some whitespace after the section
 
     \subsection{Mathematics}
@@ -119,8 +115,6 @@
         \textbullet{} Differential Equations \\
         \textbullet{} Linear Algebra \\
         \textbullet{} Asymptotic Analysis \\
-
-    \sectionspace % Some whitespace after the section
 
 
 %----------------------------------------------------------------------------------------
@@ -140,13 +134,13 @@
 
 \section{Experience}
 
-    \runsubsection{Zal.ai}
-    \descript{| Student Consultant}
+    \runsubsection{Student Consultant}
+    \descript{| Zal.ai}
 
-        \location{Sept. 2023 – Present | Orono, ME}
+        \location{Jan. 2023 – Present | Orono, ME}
         \vspace{\topsep} % Hacky fix for awkward extra vertical space
         \begin{tightitemize}
-            \item Assisted in creating an AI and a LLM to provide career advice to users.
+            \item Assisted in creating an AI and LLM to provide career advice to users.
             \item Collaborated with cross-functional teams to develop and implement AI-powered solutions for real-world business challenges.
         \end{tightitemize}
 
@@ -154,8 +148,8 @@
 
 %------------------------------------------------
 
-    \runsubsection{University of Maine, Math Dept.}
-    \descript{| Teaching Assistant}
+    \runsubsection{Teaching Assistant}
+    \descript{| University of Maine, Math Dept.}
 
         \location{Sept. 2023 - Present | Orono, ME}
         \begin{tightitemize}
@@ -168,12 +162,12 @@
 
 %------------------------------------------------
 
-    \runsubsection{Ferda Farms/Innovate For Maine }
-    \descript{| Math Modeling Intern}
+    \runsubsection{Math Modeling Intern}
+    \descript{| Ferda Farms \& Innovate For Maine}
 
         \location{June 2023 - Sept. 2023 | Orono, ME}
         \begin{tightitemize}
-            \item Developed and implemented a mathematical model to predict the movement, location and density of oysters over time for use for oyster farms.
+            \item Performed independent research on current spectrometry and shellfish models in order to develop and implement a mathematical model to predict the movement, location and density of oysters over time, for use for oyster farms.
             \item Worked with several satellite APIs including but not limited to SetninelHub and Sentinelsat to receive and analyze ocean data.
             \item Assisted in Development of website using Django framework with Python.
         \end{tightitemize}
@@ -182,10 +176,10 @@
 
 %------------------------------------------------
 
-    \runsubsection{Black Bear Consulting Corps}
-    \descript{| Student Consultant}
+    \runsubsection{Student Consultant}
+    \descript{| Black Bear Consulting Corps}
 
-        \location{January 2023 – June 2023 | Orono, ME}
+        \location{Jan. 2023 – June 2023 | Orono, ME}
         \begin{tightitemize}
             \item Worked closely with a Maine based oyster farm to create software to aid in the inspection and reporting for oyster farms in Maine.
             \item Created a website and database for said company based on required specifications.
@@ -196,12 +190,12 @@
 
 %------------------------------------------------
 
-    \runsubsection{CompuMAINE Lab}
-    \descript{| Research Assistant}
+    \runsubsection{Undergraduate Research Assistant}
+    \descript{| CompuMAINE Lab}
 
         \location{July 2022 – June 2023 | Orono, ME}
         \begin{tightitemize}
-            \item Worked on updating and improving upon cutting edge public image analysis code for use in cancer detection.
+            \item Worked on updating and improving upon the lab's image analysis code for use in cancer detection.
             \item Attended presentations for and participated in research for other lab members.
         \end{tightitemize}
 
@@ -210,22 +204,22 @@
 %------------------------------------------------
 
 
-    \runsubsection{Franco American Centre}
-    \descript{| Web Developer, Project Manager}
+    \runsubsection{Web Developer}
+    \descript{| Franco American Centre}
 
         \location{Dec. 2021 – Sept. 2022 | Orono, ME}
         \begin{tightitemize}
-            \item Worked as the go to IT and tech person in the centre.
-            \item Managed a wide variety of projects at the Centre, including but not limited to: Audio Archival, Cross-College Communication, Computer Management, and Social Media Management.
-            \item Assisted in updating code for their old archive website.
+            \item Worked on a team as a part of a multi-university collaboration to build a digital research tool for Franco American archives.
+            \item Worked as the sole IT technician for the department.
+            \item Managed a wide variety of projects including but not limited to: Audio Archival, Cross-College Communication, Computer Management, and Social Media Management.
         \end{tightitemize}
 
         \sectionspace % Some whitespace after the section
 
 %------------------------------------------------
 
-    \runsubsection{Foster Center for Innovation}
-    \descript{| Software Engineer Intern}
+    \runsubsection{Software Development Intern}
+    \descript{| Innovate For Maine}
 
         \location{June 2022 – Aug. 2022 | Orono, ME}
         \begin{tightitemize}
@@ -233,7 +227,7 @@
             \item Created and set up quickstart environments for our clients using ocker and kubernetes.
         \end{tightitemize}
 
-        %\sectionspace % Some whitespace after the section
+        \sectionspace % Some whitespace after the section
         
         % Don't actually need this last sectionspace as is this is the last entry, just here for consistency and so the page doesn't get too full. 
 
