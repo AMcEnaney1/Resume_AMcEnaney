@@ -1,6 +1,6 @@
-%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------
 %	CLASS OPTIONS AND REQUIRED PACKAGES
-%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------
 
 \ProvidesClass{AMcEnaneyResume}
 \NeedsTeXFormat{LaTeX2e}
@@ -11,9 +11,9 @@
 \usepackage[hmargin=1.25cm, vmargin=0.75cm]{geometry} % Specifies horizontal and vertical page margins
 \usepackage{hyperref} % Required for links
 
-%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------
 %	COLORS
-%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------
 
 \usepackage[usenames,dvipsnames]{xcolor} % Required for custom colors
 
@@ -22,9 +22,9 @@
 \definecolor{subheadings}{HTML}{333333} % The color of subsections and places worked/studied
 \definecolor{date}{HTML}{666666} % The color used for the Last Updated text at the top right
 
-%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------
 %	FONTS
-%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------
 
 \usepackage{fontspec} % Required for specifying custom fonts in XeLaTeX
 
@@ -32,9 +32,9 @@
 
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-ExtraLight} % The font used where \sfffamily is called
 
-%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------
 %	LAST UPDATED COMMAND
-%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------
 
 \usepackage[absolute]{textpos} % Required for positioning the Last Updated text at the top right of the page
 \usepackage[UKenglish]{isodate} % Prints the Last Updated date in UK English format
@@ -47,9 +47,9 @@
 Last Updated on \today % Last Updated text
 \end{textblock}}
 
-%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------
 %	MAIN HEADING COMMAND
-%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------
 
 \newcommand{\namesection}[3]{ % Defines the command for the main heading
 \centering{ % Center the name
@@ -64,9 +64,9 @@ Last Updated on \today % Last Updated text
 \vspace{-5pt} % Reduce whitespace after the rule slightly
 }
 
-%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------
 %	SECTION TITLE STYLING AND SPACING
-%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------
 
 \usepackage{titlesec} % Required for customizing section/subsection/etc titles
 
@@ -89,17 +89,17 @@ Last Updated on \today % Last Updated text
 \newcommand{\location}[1]{ % Used for specifying a duration and/or location under a subsection
 \color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont}
 
-%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------
 %	SECTION TITLE STYLING AND SPACING
-%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------
 
 \newenvironment{tightitemize} % Defines the tightitemize environment which modifies the itemize environment to be more compact
 {\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
 {\end{itemize}\vspace{-\topsep}}
 
-%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------
 %	Hyperlink Appearance and General Options
-%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------
 
 \hypersetup{
     colorlinks=true,
