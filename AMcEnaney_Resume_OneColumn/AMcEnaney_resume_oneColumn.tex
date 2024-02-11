@@ -1,0 +1,85 @@
+\PassOptionsToPackage{pdfpagelabels=false}{hyperref} 
+% Fixes warning caused by using hyperef with the moderncv document type
+% See here: https://tex.stackexchange.com/questions/34910/avoid-hyperref-warnings-in-moderncv
+
+\documentclass[12pt,letterpaper,unicode]{moderncv}
+
+\moderncvtheme{classic}
+
+\usepackage[hmargin=2cm, vmargin=1.75cm, headheight=14.5pt]{geometry}
+\usepackage[unicode]{hyperref} % To use hyperlinks
+\usepackage{fancyhdr} % To customize headers and footers
+
+\AtBeginDocument{\recomputelengths}
+
+% Define fancy headers and footers
+\pagestyle{fancy}
+\fancyhf{} % Clear header and footer
+\rhead{\textit{Last updated: \today}} % Set text to the top right corner
+\renewcommand{\headrulewidth}{0pt} % Remove header rule line
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={Aidan's Resume},
+    pdfpagemode=FullScreen,
+}
+
+\firstname{Aidan}
+\familyname{McEnaney}
+\address{}{Orono, ME}
+\email{aidan.mcenaney@maine.edu}
+\social[linkedin][www.linkedin.com/in/aidan-mcenaney-9807901a7/]{Aidan McEnaney}
+\social[github][github.com/AMcEnaney1]{AMcEnaney1}
+
+\nopagenumbers{}                    
+
+\begin{document}
+\vspace*{-7mm}
+\maketitle
+\vspace*{-7mm}
+
+%\lastupdated % Print the Last Updated text at the top right
+
+\section{Employment}
+    \cventry{2024-present}{Student Consultant}{Zal.ai}{}{}{
+    \begin{itemize}
+        \item Led a team in documenting existing data sources and establishing data integration protocols for a comprehensive database solution.
+        \item Designed and implemented a data schema to effectively organize and integrate data from diverse sources, ensuring data consistency and reliability.
+        \item Spearheaded the development of a FastAPI-based API for seamless interaction with the integrated database, providing efficient data access and retrieval functionalities.
+        \item Coordinated with stakeholders to identify project requirements and prioritize tasks, ensuring alignment with organizational goals and objectives.
+    \end{itemize}
+    }
+    \cventry{2023-present}{Teaching Assistant}{University of Maine}{Math Dept.}{}{
+    \begin{itemize}
+        \item Conducted biweekly recitations and weekly office hours, fostering collaborative problem-solving and offering academic support to students.
+        \item Provided comprehensive feedback and grading on student assignments, ensuring \\clarity and consistency in assessment practices.
+    \end{itemize}
+    }
+    \cventry{2023-2023}{Math Modeling Intern}{Innovate For Maine}{Ferda Farms}{}{
+    \begin{itemize}
+        \item Performed independent research on current spectrometry and shellfish models in order to develop and implement a mathematical model to predict the movement, location and density of oysters over time, for use for oyster farms.
+        \item Worked with several satellite APIs including but not limited to SetninelHub and Sentinelsat to receive and analyze ocean data.
+        \item Assisted in Development of website using Django framework with Python.
+    \end{itemize}
+    }
+    \cventry{2022-2023}{Undergraduate Research Assistant}{CompuMAINE Lab}{}{}{
+    \begin{itemize}
+        \item Worked on updating and improving upon the lab's image analysis code for use in cancer detection.
+        \item Engaged in research activities and attended presentations to support the work of fellow lab members.
+    \end{itemize}
+    }
+
+\section{Skills}
+    \cvline{Skills}{Statistics, Data Science, Machine Learning}
+    \cvline{Languages}{
+      Python, Java, C, Bash, R, MATLAB, C++, SQL, Lisp
+    }
+
+\section{Education}
+    \cventry{2025}{Master of Arts in Mathematics}{University of Maine}{}{}{}
+    \cventry{2023}{Bachelor of Science in Mathematics}{University of Maine}{}{}{}
+
+\end{document}
